@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="338.0" minWidth="600.0" prefHeight="338.0" prefWidth="600.0" style="-fx-background-color: #92C9F2;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller">
+   <children>
+      <Group layoutX="2.0" layoutY="-41.0">
+         <Label layoutX="41.0" layoutY="76.0" text="URL">
+            <font>
+               <Font name="Century751 No2 BT Roman" size="19.0" />
+            </font></Label>
+         <TextField layoutX="134.0" layoutY="76.0" prefHeight="25.0" prefWidth="306.0" fx:id="URLTextField"/>
+      </Group>
+      <Group layoutX="43.0" layoutY="87.0">
+         <TextField editable="false" layoutX="94.0" layoutY="2.0" prefHeight="25.0" prefWidth="306.0" fx:id="SavePathTextField"/>
+         <Button fx:id="browseButton" layoutX="416.0" layoutY="-1.0" mnemonicParsing="false" onAction="#onBrowseButtonClick" prefHeight="31.0" prefWidth="98.0" text="Browse">
+            <font>
+               <Font name="Century751 No2 BT Roman" size="14.0" />
+            </font></Button>
+         <Label text="Save Path">
+            <font>
+               <Font name="Century751 No2 BT Roman" size="19.0" />
+            </font>
+         </Label>
+      </Group>
+      <Group layoutX="23.0" layoutY="147.0">
+
+            <Label layoutX="20.0" text="Progress">
+               <font>
+                  <Font name="Century751 No2 BT Roman" size="19.0" />
+               </font>
+            </Label>
+         <Group layoutX="27.0" layoutY="-216.0">
+            <ProgressBar fx:id="p0" layoutX="141.0" layoutY="230.0" prefWidth="200.0" progress="0.20" />
+            <ProgressBar fx:id="p1" layoutX="141.0" layoutY="255.0" prefWidth="200.0" progress="0.50" />
+            <ProgressBar fx:id="p2" layoutX="141.0" layoutY="280.0" prefWidth="200.0" progress="0.40" />
+            <ProgressBar fx:id="p3" layoutX="141.0" layoutY="305.0" prefWidth="200.0" progress="0.17" />
+            <ProgressBar fx:id="p4" layoutX="141.0" layoutY="330.0" prefWidth="200.0" progress="0.60" />
+            <ProgressBar fx:id="p5" layoutX="141.0" layoutY="355.0" prefWidth="200.0" progress="0.2" />
+         </Group>
+      </Group>
+      <Button fx:id="downloadButton" layoutX="435.0" layoutY="260.0" mnemonicParsing="false" onAction="#onDownloadButtonClick" text="Download" />
+
+
+   </children>
+</AnchorPane>
